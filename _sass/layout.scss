@@ -133,6 +133,10 @@ header {
   clip-path: url(#shape);
 }
 
+.headerName {
+  font-family: "Montserrat", sans-serif;
+}
+
 @media only screen and (max-width: 768px) {
 
   .divider {
@@ -248,6 +252,7 @@ nav > ul li a:active {
   flex-wrap: wrap;
   padding-top: 140px;
   align-content: flex-start;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media only screen and (max-width: 992px) {
