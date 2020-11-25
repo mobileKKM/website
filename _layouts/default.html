@@ -2,7 +2,7 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="{{ site.language }}">
 {% include head.html %}
 <body>
     <div class="imageWrapper">
@@ -30,22 +30,24 @@
                     </div>
                     <div class="appNamePriceContainer">
                         <h1 class="appName">
-                            {{ site.app_name }}
+                            {{ site.data.app.name }}
                         </h1>
                         <h2 class="appPrice">
-                            {{ site.app_price }}
+                            {{ site.data.app.price }}
                         </h2>
                     </div>
                     <div class="appDescriptionContainer">
                         <p class="appDescription">
-                            {{ site.app_description }}
+                            {{ site.data.app.description }}
                         </p>
                     </div>
                     <div class="downloadButtonsContainer">
-                        {% if site.playstore_link %}
-                            <a class="playStoreLink" href="{{site.playstore_link}}"><img class="playStore" src="{{ 'assets/img/playstore.png' | relative_url }}"></a>
+                        {% if site.data.app.download.playstore %}
+                            <a class="playStoreLink" href="{{ site.data.app.download.playstore }}"><img class="playStore" src="{{ 'assets/img/playstore.png' | relative_url }}"></a>
                         {% endif %}
-                        <a class="appStoreLink" href="{{site.appstore_link}}"><img class="appStore" src="{{ 'assets/img/appstore.png' | relative_url }}"></a>
+                        {% if site.data.app.download.appstore %}
+                            <a class="appStoreLink" href="{{ site.data.app.download.appstore }}"><img class="appStore" src="{{ 'assets/img/appstore.png' | relative_url }}"></a>
+                        {% endif %}
                     </div>
                 </div>
                 {% include features.html %}

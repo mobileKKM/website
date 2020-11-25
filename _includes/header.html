@@ -9,13 +9,13 @@
                 </defs>
             </svg>
             {% if page.url != '/' %}
-                <a href="../" target="_self"><img class="headerIcon" src="{{ 'assets/img/logo.png' | relative_url }}"></a>
+                <a href="{{ '/' | relative_url }}" target="_self"><img class="headerIcon" src="{{ 'assets/img/logo.png' | relative_url }}"></a>
             {% else %}
                 <img class="headerIcon" src="{{ 'assets/img/logo.png' | relative_url }}">
             {% endif %}
             <div class="divider"></div>
         </div>
-        <p class="headerName">{{ site.app_name }}</p>
+        <p class="headerName">{{ site.data.app.name }}</p>
     </div>
     <nav class="scroll">
         <ul>
