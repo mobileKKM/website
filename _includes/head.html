@@ -1,22 +1,22 @@
 <head>
 
     <!-- So meta -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="{{ site.description }}" />
-    <meta name="author" content="{{ site.author }}" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
 
     <title>{% if page.title %}{{ page.title }} - {{ site.data.app.name }}{% else %}{{ site.title }}{% endif %}</title>
 
     <!-- Open Graph -->
-    <meta property="og:site_name" content="{{ site.data.app.name }}" />
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.data.app.name }}{% else %}{{ site.title }}{% endif %}" />
-    <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
-    <meta property="og:description" content="{{ site.description }}" />
-    <meta property="og:url" content="{{ page.url | absolute_url }}" />
-    <meta property="og:image" content="{{ '/assets/img/banner.png' | absolute_url }}" />
-    <meta property="og:image:type" content="image/png" />
+    <meta property="og:site_name" content="{{ site.data.app.name }}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.data.app.name }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}">
+    <meta property="og:description" content="{{ site.description }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/img/banner.png' | absolute_url }}">
+    <meta property="og:image:type" content="image/png">
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="{{ '/favicon/apple-touch-icon.png' | relative_url }}">
@@ -30,10 +30,10 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Fonts and icons -->
-	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:500,700" />
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:500,700">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 
     <!-- Page style -->
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
 </head>
