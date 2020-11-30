@@ -1,0 +1,12 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+<?xml version="1.0" encoding="utf-8"?>
+<browserconfig>
+    <msapplication>
+        <tile>
+            <square150x150logo src="{{ '/favicon/mstile-150x150.png' | relative_url }}" />
+            <TileColor>#303f9f</TileColor>
+        </tile>
+    </msapplication>
+</browserconfig>

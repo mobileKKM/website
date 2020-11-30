@@ -9,9 +9,6 @@
 
     <title>{% if page.title %}{{ page.title }} - {{ site.data.app.name }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <!-- Fav and touch icons -->
-    <!-- TODO! -->
-
     <!-- Open Graph -->
     <meta property="og:site_name" content="{{ site.data.app.name }}" />
     <meta property="og:title" content="{% if page.title %}{{ page.title }} - {{ site.data.app.name }}{% else %}{{ site.title }}{% endif %}" />
@@ -21,11 +18,22 @@
     <meta property="og:image" content="{{ '/assets/img/banner.png' | absolute_url }}" />
     <meta property="og:image:type" content="image/png" />
 
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/favicon/apple-touch-icon.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon/favicon-32x32.png' | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon/favicon-16x16.png' | relative_url }}">
+    <link rel="manifest" href="{{ '/favicon/site.webmanifest' | relative_url }}">
+    <link rel="mask-icon" href="{{ '/favicon/safari-pinned-tab.svg' | relative_url }}" color="#303f9f">
+    <link rel="shortcut icon" href="{{ '/favicon/favicon.ico' | relative_url }}">
+    <meta name="msapplication-TileColor" content="#303f9f">
+    <meta name="msapplication-config" content="{{ '/favicon/browserconfig.xml' | relative_url }}">
+    <meta name="theme-color" content="#ffffff">
+
     <!-- Fonts and icons -->
 	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:500,700" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
 
     <!-- Page style -->
-    <link rel="stylesheet" href="{{ 'assets/css/style.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
 
 </head>
