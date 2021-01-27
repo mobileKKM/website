@@ -6,7 +6,7 @@ timezone: Europe/Warsaw
 title: mobileKKM - Krakowska Karta Miejska
 description: Nieoficjalna aplikacja do obsługi mobilnej wersji KKM na urządzeniach mobilnych.
 author: David Sn
-copyright: 2018-2020 David Sn, mKKM jest serwisem MPK S.A. w Krakowie
+copyright: 2018-2021 David Sn. mKKM jest serwisem MPK S.A. w Krakowie.
 
 # Includes an icon in the footer for each username you enter
 footer-links:
