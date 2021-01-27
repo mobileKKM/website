@@ -15,7 +15,7 @@ features:
     fontawesome_icon_name: hand-sparkles
     
   - title: Zawsze pod ręką
-    description: Kontrola biletów? Bez paniki, po prostu otwórz aplikację i pokaż wygenerowany kod biletu.
+    description: Kontrola biletów? Bez paniki, otwórz aplikację i pokaż wygenerowany kod biletu.
     fontawesome_icon_name: clipboard-check
 
   - title: Pomiń kolejkę
