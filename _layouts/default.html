@@ -46,6 +46,9 @@
                         {% if site.data.app.download.appgallery %}
                             <a class="appGalleryLink" href="{{ site.data.app.download.appgallery }}"><img class="appGallery" src="{{ 'assets/img/appgallery.png' | relative_url }}"></a>
                         {% endif %}
+                        {% if site.data.app.download.obtainium %}
+                            <a class="obtainiumLink" href="{{ site.data.app.download.obtainium }}"><img class="obtainium" src="{{ 'assets/img/obtainium.png' | relative_url }}" alt="Get it on Obtainium"></a>
+                        {% endif %}
                     </div>
                 </div>
                 {% include features.html %}

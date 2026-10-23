@@ -339,45 +339,25 @@ nav > ul li a:active {
 } 
 
 .downloadButtonsContainer {
-  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
   margin-top: 42px;
   filter: $drop-shadow;
+
+  img {
+    display: block;
+    height: 75px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
 
   .downloadButtonsContainer {
-    text-align: center;
+    justify-content: center;
   }
   
 } 
-
-.playStore {
-  height: 75px;
-  margin-right: 24px;
-}
-
-@media only screen and (max-width: 992px) {
-
-  .playStore {
-    margin-right: 24px;
-    margin-bottom: 0px;
-  }
-  
-} 
-
-@media only screen and (max-width: 528px) {
-
-  .playStore {
-    margin-right: 0px;
-    margin-bottom: 24px;
-  }
-  
-} 
-
-.appGallery {
-  height: 75px;
-}
 
 
 
