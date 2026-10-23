@@ -39,7 +39,7 @@
   padding-left: 15px;
   padding-right: 15px;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 115px 876px auto auto;
+  grid-template-rows: 115px 907px auto auto;
   grid-column-gap: 30px;
   grid-template-areas: 
     "h h h h h h h h h h h h"
@@ -412,28 +412,38 @@ nav > ul li a:active {
   background-size: 400px auto;
   background-repeat: no-repeat;
   margin-top: 68px;
+  position: relative;
+}
+
+// Draw the device frame on top of the screenshot
+.iphonePreview::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  pointer-events: none;
 }
 
 .iphoneScreen {
-  width: 348px;
+  width: 355px;
   -webkit-clip-path: url(#screenMask);
   clip-path: url(#screenMask);
-  margin-left: 25px;
-  margin-top: 58px;
+  margin-left: 21px;
+  margin-top: 21px;
 }
 
 .videoContainer {
-  width: 348px;
-  height: 696px;
+  width: 355px;
+  height: 796px;
   -webkit-clip-path: url(#screenMask);
   clip-path: url(#screenMask);
-  margin-left: 25px;
-  margin-top: 58px;
+  margin-left: 21px;
+  margin-top: 21px;
 }
 
 .videoContainer > video {
-  width: 348px;
-  height: 696px;
+  width: 355px;
+  height: 796px;
 }
 
 @media only screen and (max-width: 1070px) {
@@ -443,21 +453,21 @@ nav > ul li a:active {
   }
 
   .iphoneScreen {
-    width: 322px;
-    margin-left: 23px;
-    margin-top: 54px;
+    width: 328px;
+    margin-left: 20px;
+    margin-top: 19px;
   }
 
   .videoContainer {
-    width: 322px;
-    height: 644px;
-    margin-left: 23px;
-    margin-top: 54px;
+    width: 328px;
+    height: 736px;
+    margin-left: 20px;
+    margin-top: 19px;
   }
   
   .videoContainer > video {
-    width: 322px;
-    height: 644px;
+    width: 328px;
+    height: 736px;
   }
   
 } 
@@ -474,24 +484,24 @@ nav > ul li a:active {
   }
 
   .iphoneScreen {
-    width: 226px;
-    height: 452px;
+    width: 230px;
+    height: 517px;
     -webkit-clip-path: url(#screenMask);
     clip-path: url(#screenMask);
     margin: 0px;
-    margin-top: 38px;
+    margin-top: 14px;
   }
 
   .videoContainer {
-    width: 226px;
-    height: 452px;
+    width: 230px;
+    height: 517px;
     margin-left: 0px;
-    margin-top: 38px;
+    margin-top: 14px;
   }
 
   .videoContainer > video {
-    width: 226px;
-    height: 452px;
+    width: 230px;
+    height: 517px;
   }
   
 } 

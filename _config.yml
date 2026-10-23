@@ -3,10 +3,10 @@ language: pl
 timezone: Europe/Warsaw
 
 # Site details
-title: mobileKKM - Krakowska Karta Miejska
-description: Nieoficjalna aplikacja do obsługi mobilnej wersji KKM na urządzeniach mobilnych.
+title: "mobileKKM: bilety w telefonie"
+description: Nieoficjalna aplikacja open-source do mobilnych biletów okresowych w Krakowie.
 author: David Sn
-copyright: 2018-2026 David Sn. mKKM jest serwisem MPK S.A. w Krakowie.
+copyright: 2018-2026 David Sn. mobileKKM nie jest powiązana z ZTP ani MPK S.A. w Krakowie.
 
 # Includes an icon in the footer for each username you enter
 footer-links:
