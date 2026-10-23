@@ -345,9 +345,15 @@ nav > ul li a:active {
   margin-top: 42px;
   filter: $drop-shadow;
 
+  // Grow in proportion to each badge's aspect ratio so all end up the same height
   a {
-    flex: 1 1 0;
+    flex: 3.357 1 0; // 564x168 badges
     max-width: 252px;
+  }
+
+  a.appStoreLink {
+    flex-grow: 2.992; // 119.66x40 badge
+    max-width: 224px;
   }
 
   img {
@@ -355,6 +361,25 @@ nav > ul li a:active {
     width: 100%;
     height: auto;
   }
+}
+
+// Four or more badges are too small in one row: wrap with fixed-height badges
+@media only screen and (min-width: 993px) {
+
+  .downloadButtonsContainer:has(> a:nth-child(4)) {
+    flex-wrap: wrap;
+
+    a {
+      flex: none;
+      max-width: none;
+    }
+
+    img {
+      width: auto;
+      height: 60px;
+    }
+  }
+
 }
 
 @media only screen and (max-width: 992px) {

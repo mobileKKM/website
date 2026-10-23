@@ -5,8 +5,10 @@ price: Bezpłatna
 
 # Download buttons
 download:
+  appstore:
   playstore: https://play.google.com/store/apps/details?id=de.codebucket.mkkm&utm_source=landing-page
-  appgallery: https://appgallery.cloud.huawei.com/ag/n/app/C103078099?channelId=landing-page
+  fdroid:
+  appgallery: # https://appgallery.cloud.huawei.com/ag/n/app/C103078099?channelId=landing-page
   obtainium: https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/mobileKKM/mobile_kkm
 
 # Feature list
