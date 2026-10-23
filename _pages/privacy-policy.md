@@ -4,57 +4,141 @@ title: Polityka prywatności
 include_in_header: false
 ---
 
-**Last updated**  
-August 1 2019
+**Ostatnia aktualizacja**  
+23 października 2026
 
-# Privacy Policy
-Submissive a when owing much far bawdy thanks impolitely alas overlaid one and this one chuckled darn on more due much misheard amused far far the much purposeful that wildebeest dalmatian and piranha bluebird this and much despite however much sincere nonsensical this paradoxically more.
+# Polityka prywatności
 
-**Please note:** This is purely a dummy Privacy Policy that serves as an example for how you can use this app landing page generator. Please replace the contents with your own privacy policy.
+Ta polityka dotyczy aplikacji **mobileKKM** (Google Play: `de.codebucket.mkkm`) i strony mobilekkm.app. Aplikację tworzy David Sn jako projekt open source ([kod źródłowy](https://github.com/mobileKKM/mobile_kkm)).
+
+mobileKKM to **nieoficjalna** aplikacja do mobilnej Krakowskiej Karty Miejskiej (mKKM). Nie jest powiązana z ZTP ani MPK S.A. w Krakowie. Służy do obsługi Twojego elektronicznego Konta Pasażera (eKP): biletów, karty i konta.
+
+## W skrócie
+
+- **mobileKKM nie zbiera Twoich danych.** Nie mamy serwera z kontami użytkowników, nie używamy analityki, reklam, raportowania błędów ani usług Google Firebase.
+- Twoje dane (konto, bilety, płatności) trafiają **bezpośrednio do eKP**, którego administratorem jest ZTP w Krakowie.
+- Lokalizacja, zdjęcia i bilety, które zostają na telefonie, **nie opuszczają go**, chyba że sam wyślesz zdjęcie profilowe do eKP.
+
+## Usługi, z których korzysta aplikacja
+
+| Usługa | Po co | Co otrzymuje |
+| :--- | :--- | :--- |
+| **eKP** (`api.ekp.mpk.krakow.pl`), ZTP / MPK S.A. w Krakowie | Logowanie, konto, karta, bilety, zakup, kontrola biletów | Wszystko, co podajesz w aplikacji (e-mail, hasło, dane osobowe, zdjęcie, bilety), a przy każdym zapytaniu: losowy identyfikator instalacji, system i jego wersję, model telefonu, wersję aplikacji i adres IP. Tak samo jak oficjalna aplikacja mKKM. |
+| **relay.mobilekkm.app** (nasz serwer) | Pobranie publicznego klucza potrzebnego do szyfrowania zapytań o bilety. Dzięki niemu Twój telefon nie łączy się z Google Firebase, skąd ten klucz pobiera oficjalna aplikacja. | Tylko nazwę i wersję aplikacji oraz adres IP. Żadnych danych konta. Serwer nie zapisuje logów dostępu: adresy IP i czasy zapytań nie są nigdzie przechowywane. |
+| **Cloudflare** | Ochrona i dostarczanie ruchu do relay.mobilekkm.app | Adres IP i dane techniczne połączenia, przetwarzane przez Cloudflare zgodnie z [jego polityką](https://www.cloudflare.com/privacypolicy/). |
+| **tPay** (`secure.tpay.com`) | Płatność za bilet, w karcie przeglądarki | Dane płatności, które podajesz tPay. Aplikacja ich nie widzi. [Polityka tPay](https://tpay.com/polityka-prywatnosci). |
+| **OpenFreeMap** (`tiles.openfreemap.org`) | Mapa | Adres IP i obszar mapy, który oglądasz. Nie Twoją lokalizację. |
+| **Strony zewnętrzne** (np. ekp.mpk.krakow.pl, GitHub) | Linki otwierane w przeglądarce | To, co zwykle otrzymuje odwiedzana strona. |
+
+Administratorem danych eKP jest **Zarząd Transportu Publicznego w Krakowie** (ul. Wielopole 1, 31-072 Kraków), a przetwarza je **MPK S.A. w Krakowie**. Zasady opisuje [obowiązek informacyjny eKP](https://ekp.mpk.krakow.pl/documents/Obowi%C4%85zek%20informacyjny-sprzeda%C5%BC%20internetowa%20bilet%C3%B3w.pdf) i strona [ztp.krakow.pl/rodo](https://ztp.krakow.pl/rodo).
+
+## Dane na Twoim telefonie
+
+Aplikacja zapisuje lokalnie:
+
+- sesję logowania i losowy identyfikator instalacji (w zaszyfrowanym magazynie systemu),
+- kopie Twoich biletów, żeby były dostępne bez internetu,
+- słowniki z eKP (np. listy linii i biletów) oraz pamięć podręczną obrazków.
+
+Wylogowanie usuwa sesję i kopie biletów. Odinstalowanie aplikacji lub wyczyszczenie jej danych usuwa wszystko.
+
+## Uprawnienia
+
+- **Lokalizacja**: tylko na mapie, po dotknięciu przycisku lokalizacji, żeby pokazać Twoją pozycję. Lokalizacja nie jest nigdzie wysyłana.
+- **Aparat i zdjęcia**: tylko gdy dodajesz zdjęcie profilowe. Wybrane zdjęcie jest wysyłane do eKP, które go wymaga.
+- **Internet**: do połączeń z usługami powyżej.
+
+Kody biletów są chronione przed zrzutami ekranu.
+
+## Dzieci
+
+Konto eKP osoby poniżej 16 lat zakłada rodzic lub opiekun prawny. Aplikacja nie rejestruje takich kont i kieruje do formularza na stronie eKP.
+
+## Twoje prawa
+
+Dane Twojego konta są w eKP, więc prawa z RODO (dostęp, sprostowanie, usunięcie, ograniczenie, sprzeciw, przenoszenie) realizuje ZTP w Krakowie: [iodo@ztp.krakow.pl](mailto:iodo@ztp.krakow.pl), lub MPK S.A.: [iodo@mpk.krakow.pl](mailto:iodo@mpk.krakow.pl). Możesz też złożyć skargę do Prezesa Urzędu Ochrony Danych Osobowych.
+
+- [Usuwanie konta](usuwanie-konta.html)
+- [Usuwanie danych](usuwanie-danych.html)
+
+## Strona mobilekkm.app
+
+Strona jest hostowana na GitHub Pages, który może zapisywać adres IP odwiedzających ([polityka GitHub](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)). Czcionki i ikony pobiera z Google Fonts i cdnjs (Cloudflare), które również widzą adres IP. Nie używamy na niej plików cookie ani analityki.
+
+## Zmiany
+
+Zmiany tej polityki opublikujemy na tej stronie i zaktualizujemy datę na górze.
+
+## Kontakt
+
+[mobilekkm@codebucket.de](mailto:mobilekkm@codebucket.de)
 
 <br>
 
-## 1.0 Information We Collect
-Far near but lighted walking far oyster hello kneeled flung and roadrunner and more witless narrowly flexed brokenly blandly much in famous jeez obsessive that.
+---
 
-### 1.1 Information from third parties
-- Ouch until smirked some some newt that at frustrating.
-- Nimbly handsomely fabulously python.
-- Alas informally taped when a dear some.
+# Privacy Policy (English)
 
-### 1.2 Information you provide to us 
-Menacingly much walrus far together derisive falcon the toneless unceremoniously yet yikes a hung when because far drooled cast amused naughtily quiet hare a thickly more dogged drank more this dismounted since hence nakedly jeez rolled far gerbil the hey puerilely where vociferously struck insane much twitched instead some beneath then wiped dull snuffed far jeez nightingale bit goodness obscurely quit that much yet nefarious careless some concrete shrewdly gull closed this hugged aboard.
+This policy covers the **mobileKKM** app (Google Play: `de.codebucket.mkkm`) and the mobilekkm.app website. The app is developed by David Sn as an open-source project ([source code](https://github.com/mobileKKM/mobile_kkm)).
 
-<br>
+mobileKKM is an **unofficial** app for Kraków's mobile city card (mKKM). It is not affiliated with ZTP or MPK S.A. in Kraków. It lets you use your eKP passenger account (elektroniczne Konto Pasażera): tickets, card and account.
 
-## 2.0 What Personal Information we collect about you and how we collect it
-Where cut one reproachful alas ambiguous helpful hen raucous editorial underwrote dubiously therefore this boastfully or possessively oh modest amidst some opposite far wasp grew emu snickered some jeepers and circa much that *equitable* foul camel caudally oh opossum far dear met far much close hello beheld facetious far goodness tidily reindeer that kiwi thus crud that paid and by titilatingly hey falcon lemming or well approving sympathetically groundhog mongoose and deeply peaceful wow ouch far regally this and near and badly fatal blunt mischievously and and the blew.
+## Summary
 
-### 2.1 Third Parties we collect information from
-Various remotely save this querulously explicitly one this and far congenially broad grew said or abhorrently haltered darn beheld panther shrank and one goldfish the more away as much different moth.
+- **mobileKKM does not collect your data.** We run no server with user accounts and use no analytics, ads, crash reporting or Google Firebase services.
+- Your data (account, tickets, payments) goes **directly to eKP**, whose controller is ZTP Kraków.
+- Your location, photos and the tickets kept on your phone **stay on your phone**, unless you send a profile photo to eKP yourself.
 
-| Third Party | What is it used for? |
-| :--- | :--- |
-| Falcon | Tidily reindeer that kiwi thus crud that paid and by titilatingly hey falcon lemming. |
-| Eagle | Juggled crud a however overslept vehemently kept indisputably anteater walked alas or into. |
+## Services the app uses
 
-<br>
+| Service | Purpose | What it receives |
+| :--- | :--- | :--- |
+| **eKP** (`api.ekp.mpk.krakow.pl`), ZTP / MPK S.A. Kraków | Sign-in, account, card, tickets, purchase, ticket control | Everything you enter in the app (e-mail, password, personal details, photo, tickets) and, with every request: a random installation ID, OS and version, phone model, app version and your IP address. The same as the official mKKM app. |
+| **relay.mobilekkm.app** (our server) | Fetches the public key used to encrypt ticket requests. It means your phone never contacts Google Firebase, where the official app gets this key. | Only the app's name and version and your IP address. No account data. The server keeps no access logs: IP addresses and request times are not stored anywhere. |
+| **Cloudflare** | Protects and delivers traffic to relay.mobilekkm.app | IP address and technical connection data, processed under [Cloudflare's policy](https://www.cloudflare.com/privacypolicy/). |
+| **tPay** (`secure.tpay.com`) | Paying for tickets, in a browser tab | The payment details you give tPay. The app does not see them. [tPay's policy](https://tpay.com/polityka-prywatnosci). |
+| **OpenFreeMap** (`tiles.openfreemap.org`) | Map | IP address and the map area you view. Not your location. |
+| **External websites** (e.g. ekp.mpk.krakow.pl, GitHub) | Links opened in the browser | What any visited website receives. |
 
-## 3.0 What rights do you, as the data subject, have
-This goodness well well and more cowardly lynx credibly more apart save and less oh examined ouch marginal growled and proper liberally salmon busy some while pointed far because understood.
+The controller of eKP data is **Zarząd Transportu Publicznego w Krakowie** (ZTP, ul. Wielopole 1, 31-072 Kraków, Poland), and it is processed by **MPK S.A. w Krakowie**. Their rules are in eKP's [information notice](https://ekp.mpk.krakow.pl/documents/Obowi%C4%85zek%20informacyjny-sprzeda%C5%BC%20internetowa%20bilet%C3%B3w.pdf) and at [ztp.krakow.pl/rodo](https://ztp.krakow.pl/rodo) (Polish).
 
-1. Boastfully or possessively oh modest amidst.
-2. Far far the much purposeful that wildebeest dalmatian.
-3. Adamant or pushed less far overthrew.
+## Data on your phone
 
-All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
+The app stores locally:
 
-<br>
+- your sign-in session and a random installation ID (in the system's encrypted storage),
+- copies of your tickets, so they work offline,
+- reference lists from eKP (such as lines and ticket types) and an image cache.
 
-## 4.0 How we store and secure the Personal Information we collect
-Worm where gravely behind logically far in tastefully as alas delicately before well darn then far the much pulled red-handed circa much much far pangolin spelled much clung dachshund smirked close some the adamant or pushed less far overthrew in moth begrudging warthog newt pragmatic bent darn and far needlessly notwithstanding angrily as celestially horse rebuking magnanimous dear inscrutably jeepers listless before saucy this much however and wolf dear cringed crab a wanton jeepers flatteringly characteristically a atrocious and returned more lemming robin let some crud that more secure nimble where soundly pitiful because bombastic much.
+Signing out removes the session and ticket copies. Uninstalling the app or clearing its data removes everything.
 
-<br>
+## Permissions
 
-## 5.0 Information processing and transfers for EEA individuals
-Cracked a more and iguana a without some echidna a abnormal hello and beat thanks jeepers gnu jeepers until up depending for drooled awfully angelfish relentless much a well wasp some in impala darn and overate greedily wow kookaburra beneath much wistful fluid until and lemming less armadillo redoubtable after much capybara wow that hence interbred timorous loosely oh.
+- **Location**: only on the map, after you tap the location button, to show where you are. Your location is never sent anywhere.
+- **Camera and photos**: only when you add a profile photo. The chosen photo is sent to eKP, which requires it.
+- **Internet**: to connect to the services above.
+
+Ticket codes are protected from screenshots.
+
+## Children
+
+An eKP account for someone under 16 is created by a parent or legal guardian. The app does not register such accounts and sends you to the eKP website's form instead.
+
+## Your rights
+
+Your account data is held by eKP, so GDPR rights (access, correction, deletion, restriction, objection, portability) are handled by ZTP Kraków: [iodo@ztp.krakow.pl](mailto:iodo@ztp.krakow.pl), or MPK S.A.: [iodo@mpk.krakow.pl](mailto:iodo@mpk.krakow.pl). You can also complain to the Polish data protection authority (Prezes Urzędu Ochrony Danych Osobowych).
+
+- [Account deletion](usuwanie-konta.html)
+- [Data deletion](usuwanie-danych.html)
+
+## The mobilekkm.app website
+
+The website is hosted on GitHub Pages, which may log visitors' IP addresses ([GitHub's policy](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)). It loads fonts and icons from Google Fonts and cdnjs (Cloudflare), which also see your IP address. We use no cookies or analytics on it.
+
+## Changes
+
+Changes to this policy will be published on this page with an updated date at the top.
+
+## Contact
+
+[mobilekkm@codebucket.de](mailto:mobilekkm@codebucket.de)
