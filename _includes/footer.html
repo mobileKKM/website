@@ -1,6 +1,22 @@
 <footer>
     <p class="footerText">&copy; {{ site.copyright }}</p>
     <div class="footerIcons">
+        {% if site.footer-links.linkedin %}
+            <a href="https://linkedin.com/in/{{ site.footer-links.linkedin }}">
+                <span class="fa-stack fa-1x">
+                    <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
+                    <i class="socialIconTop fab fa-linkedin fa-stack-1x"></i>
+                </span>
+            </a>
+        {% endif %}
+        {% if site.footer-links.linkedin-company %}
+            <a href="https://linkedin.com/company/{{ site.footer-links.linkedin-company }}">
+                <span class="fa-stack fa-1x">
+                    <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
+                    <i class="socialIconTop fab fa-linkedin fa-stack-1x"></i>
+                </span>
+            </a>
+        {% endif %}
         {% if site.footer-links.facebook %}
             <a href="https://facebook.com/{{ site.footer-links.facebook }}">
                 <span class="fa-stack fa-1x">
@@ -14,6 +30,14 @@
                 <span class="fa-stack fa-1x">
                     <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
                     <i class="socialIconTop fab fa-instagram fa-stack-1x"></i>
+                </span>
+            </a>
+        {% endif %}
+        {% if site.footer-links.mastodon %}
+            <a rel="me" href="{{ site.footer-links.mastodon }}">
+                <span class="fa-stack fa-1x">
+                    <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
+                    <i class="socialIconTop fab fa-mastodon fa-stack-1x"></i>
                 </span>
             </a>
         {% endif %}
@@ -44,7 +68,9 @@
     </div>
     <div class="footerLinks">
         {% for page in site.pages %}
-            <a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
+            {% unless page.include_in_footer == false %}
+                <a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a>
+            {% endunless %}
         {% endfor %}
     </div>
 </footer>
