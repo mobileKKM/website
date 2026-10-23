@@ -338,26 +338,44 @@ nav > ul li a:active {
   
 } 
 
+// Desktop: badges share one row and shrink to fit (max 75px tall)
 .downloadButtonsContainer {
   display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
+  gap: 16px;
   margin-top: 42px;
   filter: $drop-shadow;
 
+  a {
+    flex: 1 1 0;
+    max-width: 252px;
+  }
+
   img {
     display: block;
-    height: 75px;
+    width: 100%;
+    height: auto;
   }
 }
 
 @media only screen and (max-width: 992px) {
 
   .downloadButtonsContainer {
+    flex-wrap: wrap;
+    gap: 24px;
     justify-content: center;
+
+    a {
+      flex: none;
+      max-width: none;
+    }
+
+    img {
+      width: auto;
+      height: 75px;
+    }
   }
-  
-} 
+
+}
 
 
 
