@@ -2,6 +2,9 @@
 layout: page
 title: Cennik biletów
 include_in_header: true
+order: 1
+ref: prices
+description: "Aktualne ceny biletów okresowych KMK w Krakowie: Bilety Mieszkańca, Bilet Metropolitalny i Studencki Roczny."
 ---
 **Ostatnia aktualizacja**  
 23 października 2026

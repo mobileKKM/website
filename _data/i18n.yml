@@ -1,0 +1,86 @@
+# Texts per language. Pages pick theirs by page.lang (see defaults in _config.yml).
+pl:
+  locale: pl_PL
+  home: /
+  title: "mobileKKM: bilety w telefonie"
+  description: Nieoficjalna aplikacja open-source do mobilnych biletów okresowych w Krakowie.
+  price: Bezpłatna
+  copyright: mobileKKM nie jest powiązana z ZTP ani MPK S.A. w Krakowie.
+  switch_label: English
+  switch_short: EN
+  logo_alt: Logo mobileKKM
+  screenshot_alt: Zrzut ekranu aplikacji mobileKKM
+  image_alt: "mobileKKM: nieoficjalna aplikacja do biletów okresowych w Krakowie"
+  badges:
+    appstore: Pobierz w App Store
+    playstore: Pobierz z Google Play
+    fdroid: Pobierz z F-Droid
+    appgallery: Odkrywaj w AppGallery
+    obtainium: Pobierz przez Obtainium
+  features:
+    - title: Pełna prywatność
+      description: Bez śledzenia, analityki i reklam. Otwarty kod, który każdy może sprawdzić.
+      fontawesome_icon_name: user-shield
+
+    - title: Łatwa w obsłudze
+      description: Wystarczy raz zalogować się i być zawsze zalogowanym podczas otwierania aplikacji.
+      fontawesome_icon_name: hand-sparkles
+
+    - title: Zawsze pod ręką
+      description: Kontrola biletów? Bez paniki, otwórz aplikację i pokaż wygenerowany kod biletu.
+      fontawesome_icon_name: clipboard-check
+
+    - title: Pomiń kolejkę
+      description: Nie trać czasu stojąc w kolejce po nową plastikową kartę lub kupując nowy bilet.
+      fontawesome_icon_name: hourglass-end
+
+    - title: Szybko i bezpiecznie
+      description: Wybierz swój bilet i zapłać za niego bezpiecznie w aplikacji, bez żadnych kłopotów.
+      fontawesome_icon_name: lock
+
+    - title: Synchronizacja online
+      description: Bilety są przechowywane online, więc nie musisz się martwić, kiedy zgubisz swój telefon.
+      fontawesome_icon_name: sync-alt
+
+en:
+  locale: en_US
+  home: /en/
+  title: "mobileKKM: tickets on your phone"
+  description: Unofficial, open-source app for your mobile period tickets in Kraków.
+  price: Free
+  copyright: mobileKKM is not affiliated with ZTP or MPK S.A. in Kraków.
+  switch_label: Polski
+  switch_short: PL
+  logo_alt: mobileKKM logo
+  screenshot_alt: Screenshot of the mobileKKM app
+  image_alt: "mobileKKM: unofficial app for period tickets in Kraków"
+  badges:
+    appstore: Download on the App Store
+    playstore: Get it on Google Play
+    fdroid: Get it on F-Droid
+    appgallery: Explore it on AppGallery
+    obtainium: Get it on Obtainium
+  features:
+    - title: Privacy first
+      description: No tracking, analytics or ads. Open source code that anyone can check.
+      fontawesome_icon_name: user-shield
+
+    - title: Easy to use
+      description: Sign in once and stay signed in every time you open the app.
+      fontawesome_icon_name: hand-sparkles
+
+    - title: Always at hand
+      description: Ticket inspection? No panic, just open the app and show your ticket code.
+      fontawesome_icon_name: clipboard-check
+
+    - title: Skip the queue
+      description: Don't waste time queuing for a new plastic card or buying a new ticket.
+      fontawesome_icon_name: hourglass-end
+
+    - title: Fast and secure
+      description: Choose your ticket and pay for it securely in the app, without any hassle.
+      fontawesome_icon_name: lock
+
+    - title: Online sync
+      description: Your tickets are stored online, so you don't have to worry if you lose your phone.
+      fontawesome_icon_name: sync-alt

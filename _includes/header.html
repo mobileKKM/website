@@ -6,10 +6,10 @@
                     <rect id="rect102" width="1" height="1" x="0" y="0" rx="0.2" ry="0.2" />
                 </clipPath>
             </svg>
-            {% if page.url != '/' %}
-                <a href="{{ '/' | relative_url }}" target="_self"><img class="headerIcon" src="{{ '/assets/img/logo.png' | relative_url }}"></a>
+            {% if page.ref != 'home' %}
+                <a href="{{ t.home | relative_url }}" target="_self"><img class="headerIcon" src="{{ '/assets/img/logo.png' | relative_url }}" alt="{{ t.logo_alt }}"></a>
             {% else %}
-                <img class="headerIcon" src="{{ '/assets/img/logo.png' | relative_url }}">
+                <img class="headerIcon" src="{{ '/assets/img/logo.png' | relative_url }}" alt="{{ t.logo_alt }}">
             {% endif %}
             <div class="divider"></div>
         </div>
@@ -17,11 +17,16 @@
     </div>
     <nav class="scroll">
         <ul>
-            {% for page in site.pages %}
-                {% if page.include_in_header == true %}
-                    <li><a href="{{ page.url | relative_url }}" target="_self">{{ page.title }}</a></li>
+            {% assign nav_pages = site.pages | where: "lang", page.lang | sort: "order" %}
+            {% for p in nav_pages %}
+                {% if p.include_in_header == true %}
+                    <li><a href="{{ p.url | relative_url }}" target="_self">{{ p.title }}</a></li>
                 {% endif %}
             {% endfor %}
+            {% assign other_lang = 'en' %}{% if page.lang == 'en' %}{% assign other_lang = 'pl' %}{% endif %}
+            {% assign switch_url = site.data.i18n[other_lang].home %}
+            {% for tr in translations %}{% if tr.lang == other_lang %}{% assign switch_url = tr.url | replace: 'index.html', '' %}{% endif %}{% endfor %}
+            <li><a href="{{ switch_url | relative_url }}" hreflang="{{ other_lang }}" lang="{{ other_lang }}" title="{{ t.switch_label }}" target="_self">{{ t.switch_short }}</a></li>
         </ul>
     </nav>
 </header>

@@ -2,7 +2,7 @@
 # Front matter comment to ensure Jekyll properly reads file.
 ---
 <!DOCTYPE html>
-<html lang="{{ site.language }}">
+<html lang="{{ page.lang }}">
 {% include head.html %}
 <body>
     <div class="imageWrapper">
@@ -15,7 +15,7 @@
                             <rect id="rect105" width="1" height="1" x="0" y="0" rx="0.137" ry="0.0611" />
                         </clipPath>
                     </svg>
-                    <img class="iphoneScreen" src="{{ 'assets/img/screenshot.png' | relative_url }}" alt="App preview">
+                    <img class="iphoneScreen" src="{{ '/assets/img/screenshot.png' | relative_url }}" alt="{{ t.screenshot_alt }}">
                 </div>
                 <div class="appInfo">
                     <div class="appIconShadow">
@@ -24,36 +24,36 @@
                                 <rect id="rect107" width="1" height="1" x="0" y="0" rx="0.2" ry="0.2" />
                             </clipPath>
                         </svg>
-                        <img class="appIconLarge" src="{{ 'assets/img/logo.png' | relative_url }}">
+                        <img class="appIconLarge" src="{{ '/assets/img/logo.png' | relative_url }}" alt="{{ t.logo_alt }}">
                     </div>
                     <div class="appNamePriceContainer">
                         <h1 class="appName">
                             {{ site.data.app.name }}
                         </h1>
                         <h2 class="appPrice">
-                            {{ site.data.app.price }}
+                            {{ t.price }}
                         </h2>
                     </div>
                     <div class="appDescriptionContainer">
                         <p class="appDescription">
-                            {{ site.data.app.description }}
+                            {{ t.description }}
                         </p>
                     </div>
                     <div class="downloadButtonsContainer">
                         {% if site.data.app.download.appstore %}
-                            <a class="appStoreLink" href="{{ site.data.app.download.appstore }}"><img class="appStore" src="{{ 'assets/img/appstore.png' | relative_url }}" alt="Pobierz w App Store"></a>
+                            <a class="appStoreLink" href="{{ site.data.app.download.appstore }}"><img class="appStore" src="{{ '/assets/img/appstore.png' | relative_url }}" alt="{{ t.badges.appstore }}"></a>
                         {% endif %}
                         {% if site.data.app.download.playstore %}
-                            <a class="playStoreLink" href="{{ site.data.app.download.playstore }}"><img class="playStore" src="{{ 'assets/img/playstore.png' | relative_url }}" alt="Pobierz z Google Play"></a>
+                            <a class="playStoreLink" href="{{ site.data.app.download.playstore }}"><img class="playStore" src="{{ '/assets/img/playstore.png' | relative_url }}" alt="{{ t.badges.playstore }}"></a>
                         {% endif %}
                         {% if site.data.app.download.fdroid %}
-                            <a class="fDroidLink" href="{{ site.data.app.download.fdroid }}"><img class="fDroid" src="{{ 'assets/img/fdroid.png' | relative_url }}" alt="Pobierz z F-Droid"></a>
+                            <a class="fDroidLink" href="{{ site.data.app.download.fdroid }}"><img class="fDroid" src="{{ '/assets/img/fdroid.png' | relative_url }}" alt="{{ t.badges.fdroid }}"></a>
                         {% endif %}
                         {% if site.data.app.download.appgallery %}
-                            <a class="appGalleryLink" href="{{ site.data.app.download.appgallery }}"><img class="appGallery" src="{{ 'assets/img/appgallery.png' | relative_url }}" alt="Odkrywaj w AppGallery"></a>
+                            <a class="appGalleryLink" href="{{ site.data.app.download.appgallery }}"><img class="appGallery" src="{{ '/assets/img/appgallery.png' | relative_url }}" alt="{{ t.badges.appgallery }}"></a>
                         {% endif %}
                         {% if site.data.app.download.obtainium %}
-                            <a class="obtainiumLink" href="{{ site.data.app.download.obtainium }}"><img class="obtainium" src="{{ 'assets/img/obtainium.png' | relative_url }}" alt="Get it on Obtainium"></a>
+                            <a class="obtainiumLink" href="{{ site.data.app.download.obtainium }}"><img class="obtainium" src="{{ '/assets/img/obtainium.png' | relative_url }}" alt="{{ t.badges.obtainium }}"></a>
                         {% endif %}
                     </div>
                 </div>

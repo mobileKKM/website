@@ -2,11 +2,9 @@
 language: pl
 timezone: Europe/Warsaw
 
-# Site details
-title: "mobileKKM: bilety w telefonie"
-description: Nieoficjalna aplikacja open-source do mobilnych biletów okresowych w Krakowie.
+# Site details (texts per language are in _data/i18n.yml)
+url: https://mobilekkm.app
 author: David Sn
-copyright: 2018-2026 David Sn. mobileKKM nie jest powiązana z ZTP ani MPK S.A. w Krakowie.
 
 # Includes an icon in the footer for each username you enter
 footer-links:
@@ -42,6 +40,7 @@ sass:
 # Exclude these files from your production _site
 exclude:
   - Gemfile
+  - vendor
   - Gemfile.lock
   - LICENSE
   - README.md
@@ -56,3 +55,18 @@ collections:
   pages:
     output: true
     permalink: /:path.html
+
+# Page language: Polish by default, English under /en/
+defaults:
+  - scope:
+      path: ""
+    values:
+      lang: pl
+  - scope:
+      path: "en"
+    values:
+      lang: en
+  - scope:
+      path: "_pages/en"
+    values:
+      lang: en

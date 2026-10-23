@@ -1,7 +1,5 @@
-# App information
+# App information (texts per language are in _data/i18n.yml)
 name: mobileKKM
-description: Nieoficjalna aplikacja open-source do mobilnych biletów okresowych w Krakowie.
-price: Bezpłatna
 
 # Download buttons
 download:
@@ -10,29 +8,3 @@ download:
   fdroid: https://f-droid.org/packages/de.codebucket.mkkm/
   appgallery: # https://appgallery.cloud.huawei.com/ag/n/app/C103078099?channelId=landing-page
   obtainium: # https://apps.obtainium.imranr.dev/redirect?r=obtainium://add/https://github.com/mobileKKM/mobile_kkm
-
-# Feature list
-features:
-  - title: Łatwa w obsłudze
-    description: Wystarczy raz zalogować się i być zawsze zalogowanym podczas otwierania aplikacji.
-    fontawesome_icon_name: hand-sparkles
-    
-  - title: Zawsze pod ręką
-    description: Kontrola biletów? Bez paniki, otwórz aplikację i pokaż wygenerowany kod biletu.
-    fontawesome_icon_name: clipboard-check
-
-  - title: Pomiń kolejkę
-    description: Nie trać czasu stojąc w kolejce po nową plastikową kartę lub kupując nowy bilet.
-    fontawesome_icon_name: hourglass-end
-
-  - title: Szybko i bezpiecznie
-    description: Wybierz swój bilet i zapłać za niego bezpiecznie w aplikacji, bez żadnych kłopotów.
-    fontawesome_icon_name: lock
-
-  - title: Nie zapomnij o bilecie
-    description: Dowiedz się z wyprzedzeniem o zbliżającym się terminie ważności biletu.
-    fontawesome_icon_name: bell
-
-  - title: Synchronizacja online
-    description: Bilety są przechowywane online, więc nie musisz się martwić, kiedy zgubisz swój telefon.
-    fontawesome_icon_name: sync-alt

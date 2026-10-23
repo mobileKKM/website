@@ -3,8 +3,8 @@
 ---
 {
     "short_name": "{{ site.data.app.name }}",
-    "name": "{{ site.title }}",
-    "description": "{{ site.description }}",
+    "name": "{{ site.data.i18n.pl.title }}",
+    "description": "{{ site.data.i18n.pl.description }}",
     "icons": [
         {
             "src": "{{ '/favicon/android-chrome-192x192.png' | relative_url }}",
@@ -17,7 +17,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
+    "theme_color": "#303f9f",
     "background_color": "#ffffff",
     "display": "standalone"
 }

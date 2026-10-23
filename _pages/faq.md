@@ -2,6 +2,9 @@
 layout: page
 title: FAQ
 include_in_header: true
+order: 2
+ref: faq
+description: "Odpowiedzi na najczęstsze pytania o mobileKKM: bilety na mKKM, kontrola biletów, Karta Krakowska, konto i prywatność."
 ---
 **Ostatnia aktualizacja**  
 23 października 2026
