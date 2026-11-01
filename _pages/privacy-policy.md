@@ -67,7 +67,7 @@ Dane Twojego konta są w eKP, więc prawa z RODO (dostęp, sprostowanie, usunię
 
 ## Strona mobilekkm.app
 
-Strona jest hostowana na GitHub Pages, który może zapisywać adres IP odwiedzających ([polityka GitHub](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)). Czcionki i ikony pobiera z Google Fonts i cdnjs (Cloudflare), które również widzą adres IP. Nie używamy na niej plików cookie ani analityki.
+Strona jest hostowana na GitHub Pages, który może zapisywać adres IP odwiedzających ([polityka GitHub](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)). Nie używamy na niej plików cookie ani analityki.
 
 ## Zmiany
 

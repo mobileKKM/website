@@ -540,19 +540,32 @@ nav > ul li a:active {
   padding-left: 0px;
 }
 
-.iconBack {
-  color: $feature-icons-background-color;
+.icon {
+  position: relative;
+  display: inline-block;
+  width: 1.94em; // Font Awesome's circle glyph is slightly smaller than 2em
+  height: 1.94em;
+  margin: 0.03em 0.28em; // Keeps the 2.5em wide stack
+  border-radius: 50%;
+  background: $feature-icons-background-color;
+  vertical-align: middle;
 }
 
-.iconTop {
+.icon svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 1em;
+  overflow: visible; // some Font Awesome 7 paths extend past their viewBox
+  transform: translate(-50%, -50%);
   color: $feature-icons-foreground-color;
 }
 
-.socialIconBack {
-  color: $social-icons-background-color;
+.socialIcon {
+  background: $social-icons-background-color;
 }
 
-.socialIconTop {
+.socialIcon svg {
   color: $social-icons-foreground-color;
 }
 

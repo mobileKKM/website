@@ -3,66 +3,42 @@
     <div class="footerIcons">
         {% if site.footer-links.linkedin %}
             <a href="https://linkedin.com/in/{{ site.footer-links.linkedin }}">
-                <span class="fa-stack fa-1x">
-                    <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-                    <i class="socialIconTop fab fa-linkedin fa-stack-1x"></i>
-                </span>
+                <span class="icon socialIcon">{% include icons/linkedin.svg %}</span>
             </a>
         {% endif %}
         {% if site.footer-links.linkedin-company %}
             <a href="https://linkedin.com/company/{{ site.footer-links.linkedin-company }}">
-                <span class="fa-stack fa-1x">
-                    <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-                    <i class="socialIconTop fab fa-linkedin fa-stack-1x"></i>
-                </span>
+                <span class="icon socialIcon">{% include icons/linkedin.svg %}</span>
             </a>
         {% endif %}
         {% if site.footer-links.facebook %}
             <a href="https://facebook.com/{{ site.footer-links.facebook }}">
-                <span class="fa-stack fa-1x">
-                    <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-                    <i class="socialIconTop fab fa-facebook fa-stack-1x"></i>
-                </span>
+                <span class="icon socialIcon">{% include icons/facebook.svg %}</span>
             </a>
         {% endif %}
         {% if site.footer-links.instagram %}
             <a href="https://instagram.com/{{ site.footer-links.instagram }}">
-                <span class="fa-stack fa-1x">
-                    <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-                    <i class="socialIconTop fab fa-instagram fa-stack-1x"></i>
-                </span>
+                <span class="icon socialIcon">{% include icons/instagram.svg %}</span>
             </a>
         {% endif %}
         {% if site.footer-links.mastodon %}
             <a rel="me" href="{{ site.footer-links.mastodon }}">
-                <span class="fa-stack fa-1x">
-                    <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-                    <i class="socialIconTop fab fa-mastodon fa-stack-1x"></i>
-                </span>
+                <span class="icon socialIcon">{% include icons/mastodon.svg %}</span>
             </a>
         {% endif %}
         {% if site.footer-links.github %}
             <a href="https://github.com/{{ site.footer-links.github }}">
-                <span class="fa-stack fa-1x">
-                    <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-                    <i class="socialIconTop fab fa-github fa-stack-1x"></i>
-                </span>
+                <span class="icon socialIcon">{% include icons/github.svg %}</span>
             </a>
         {% endif %}
         {% if site.footer-links.youtube %}
             <a href="https://youtube.com/channel/{{ site.footer-links.youtube }}">
-                <span class="fa-stack fa-1x">
-                    <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-                    <i class="socialIconTop fab fa-youtube fa-stack-1x"></i>
-                </span>
+                <span class="icon socialIcon">{% include icons/youtube.svg %}</span>
             </a>
         {% endif %}
         {% if site.footer-links.email %}
             <a href="mailto:{{ site.footer-links.email }}">
-                <span class="fa-stack fa-1x">
-                    <i class="socialIconBack fas fa-circle fa-stack-2x"></i>
-                    <i class="socialIconTop fas fa-envelope fa-stack-1x"></i>
-                </span>
+                <span class="icon socialIcon">{% include icons/envelope.svg %}</span>
             </a>
         {% endif %}
     </div>

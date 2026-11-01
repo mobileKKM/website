@@ -67,7 +67,7 @@ Your account data is held by eKP, so GDPR rights (access, correction, deletion, 
 
 ## The mobilekkm.app website
 
-The website is hosted on GitHub Pages, which may log visitors' IP addresses ([GitHub's policy](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)). It loads fonts and icons from Google Fonts and cdnjs (Cloudflare), which also see your IP address. We use no cookies or analytics on it.
+The website is hosted on GitHub Pages, which may log visitors' IP addresses ([GitHub's policy](https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement)). We use no cookies or analytics on it.
 
 ## Changes
 

@@ -40,7 +40,7 @@ pl:
 
     - title: Synchronizacja online
       description: Bilety są przechowywane online, więc nie musisz się martwić, kiedy zgubisz swój telefon.
-      fontawesome_icon_name: sync-alt
+      fontawesome_icon_name: arrows-rotate
 
 en:
   locale: en_US
@@ -83,4 +83,4 @@ en:
 
     - title: Online sync
       description: Your tickets are stored online, so you don't have to worry if you lose your phone.
-      fontawesome_icon_name: sync-alt
+      fontawesome_icon_name: arrows-rotate
