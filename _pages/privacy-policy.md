@@ -8,7 +8,7 @@ description: "mobileKKM nie zbiera Twoich danych: bez analityki, reklam i Google
 ---
 
 **Ostatnia aktualizacja**  
-23 października 2026
+1 listopada 2026
 
 # Polityka prywatności
 
@@ -18,7 +18,7 @@ mobileKKM to **nieoficjalna** aplikacja do mobilnej Krakowskiej Karty Miejskiej 
 
 ## W skrócie
 
-- **mobileKKM nie zbiera Twoich danych.** Nie mamy serwera z kontami użytkowników, nie używamy analityki, reklam, raportowania błędów ani usług Google Firebase.
+- **mobileKKM nie zbiera Twoich danych.** Nie mamy serwera z kontami użytkowników (nasze serwery przekazują tylko publiczne dane o rozkładach jazdy i klucz szyfrujący), nie używamy analityki, reklam, raportowania błędów ani usług Google Firebase.
 - Twoje dane (konto, bilety, płatności) trafiają **bezpośrednio do eKP**, którego administratorem jest ZTP w Krakowie.
 - Lokalizacja, zdjęcia i bilety, które zostają na telefonie, **nie opuszczają go**, chyba że sam wyślesz zdjęcie profilowe do eKP.
 
@@ -28,7 +28,8 @@ mobileKKM to **nieoficjalna** aplikacja do mobilnej Krakowskiej Karty Miejskiej 
 | :--- | :--- | :--- |
 | **eKP** (`api.ekp.mpk.krakow.pl`), ZTP / MPK S.A. w Krakowie | Logowanie, konto, karta, bilety, zakup, kontrola biletów | Wszystko, co podajesz w aplikacji (e-mail, hasło, dane osobowe, zdjęcie, bilety), a przy każdym zapytaniu: losowy identyfikator instalacji, system i jego wersję, model telefonu, wersję aplikacji i adres IP. Tak samo jak oficjalna aplikacja mKKM. |
 | **relay.mobilekkm.app** (nasz serwer) | Pobranie publicznego klucza potrzebnego do szyfrowania zapytań o bilety. Dzięki niemu Twój telefon nie łączy się z Google Firebase, skąd ten klucz pobiera oficjalna aplikacja. | Tylko nazwę i wersję aplikacji oraz adres IP. Żadnych danych konta. Serwer nie zapisuje logów dostępu: adresy IP i czasy zapytań nie są nigdzie przechowywane. |
-| **Cloudflare** | Ochrona i dostarczanie ruchu do relay.mobilekkm.app | Adres IP i dane techniczne połączenia, przetwarzane przez Cloudflare zgodnie z [jego polityką](https://www.cloudflare.com/privacypolicy/). |
+| **gtfs.mobilekkm.app** (nasz serwer) | Publiczne dane o transporcie na mapie: pojazdy na żywo, przystanki, wyszukiwarka przystanków, odjazdy, trasy i komunikaty o utrudnieniach. Serwer pobiera rozkłady jazdy i dane o pojazdach z publicznych źródeł (ZTP, Koleje Małopolskie, OpenStreetMap), więc nie przesyła do nich Twoich danych. | Adres IP oraz parametry zapytania: oglądany obszar mapy, wybrany przystanek, linię lub pojazd, wpisaną nazwę przystanku i wybrane filtry. Nie wysyłamy danych konta, identyfikatora instalacji ani biletów. Serwer nie zapisuje logów dostępu i niczego nie przypisuje do użytkownika: adresy IP i zapytania nie są nigdzie przechowywane. |
+| **Cloudflare** | Ochrona i dostarczanie ruchu do relay.mobilekkm.app i gtfs.mobilekkm.app | Adres IP i dane techniczne połączenia, przetwarzane przez Cloudflare zgodnie z [jego polityką](https://www.cloudflare.com/privacypolicy/). |
 | **tPay** (`secure.tpay.com`) | Płatność za bilet, w karcie przeglądarki | Dane płatności, które podajesz tPay. Aplikacja ich nie widzi. [Polityka tPay](https://tpay.com/polityka-prywatnosci). |
 | **OpenFreeMap** (`tiles.openfreemap.org`) | Mapa | Adres IP i obszar mapy, który oglądasz. Nie Twoją lokalizację. |
 | **Strony zewnętrzne** (np. ekp.mpk.krakow.pl, GitHub) | Linki otwierane w przeglądarce | To, co zwykle otrzymuje odwiedzana strona. |
@@ -47,7 +48,7 @@ Wylogowanie usuwa sesję i kopie biletów. Odinstalowanie aplikacji lub wyczyszc
 
 ## Uprawnienia
 
-- **Lokalizacja**: tylko na mapie, po dotknięciu przycisku lokalizacji, żeby pokazać Twoją pozycję. Lokalizacja nie jest nigdzie wysyłana.
+- **Lokalizacja**: tylko na mapie, po dotknięciu przycisku lokalizacji, żeby pokazać Twoją pozycję. Współrzędne Twojej lokalizacji nie są nigdzie wysyłane; serwer gtfs.mobilekkm.app dostaje tylko obszar mapy, który oglądasz.
 - **Aparat i zdjęcia**: tylko gdy dodajesz zdjęcie profilowe. Wybrane zdjęcie jest wysyłane do eKP, które go wymaga.
 - **Internet**: do połączeń z usługami powyżej.
 

@@ -8,7 +8,7 @@ description: "mobileKKM collects none of your data: no analytics, ads or Google 
 ---
 
 **Last updated**  
-October 23, 2026
+November 1, 2026
 
 # Privacy policy
 
@@ -18,7 +18,7 @@ mobileKKM is an **unofficial** app for Kraków's mobile city card (mKKM). It is 
 
 ## Summary
 
-- **mobileKKM does not collect your data.** We run no server with user accounts and use no analytics, ads, crash reporting or Google Firebase services.
+- **mobileKKM does not collect your data.** We run no server with user accounts (our servers only relay public timetable data and an encryption key) and use no analytics, ads, crash reporting or Google Firebase services.
 - Your data (account, tickets, payments) goes **directly to eKP**, whose controller is ZTP Kraków.
 - Your location, photos and the tickets kept on your phone **stay on your phone**, unless you send a profile photo to eKP yourself.
 
@@ -28,7 +28,8 @@ mobileKKM is an **unofficial** app for Kraków's mobile city card (mKKM). It is 
 | :--- | :--- | :--- |
 | **eKP** (`api.ekp.mpk.krakow.pl`), ZTP / MPK S.A. Kraków | Sign-in, account, card, tickets, purchase, ticket control | Everything you enter in the app (e-mail, password, personal details, photo, tickets) and, with every request: a random installation ID, OS and version, phone model, app version and your IP address. The same as the official mKKM app. |
 | **relay.mobilekkm.app** (our server) | Fetches the public key used to encrypt ticket requests. It means your phone never contacts Google Firebase, where the official app gets this key. | Only the app's name and version and your IP address. No account data. The server keeps no access logs: IP addresses and request times are not stored anywhere. |
-| **Cloudflare** | Protects and delivers traffic to relay.mobilekkm.app | IP address and technical connection data, processed under [Cloudflare's policy](https://www.cloudflare.com/privacypolicy/). |
+| **gtfs.mobilekkm.app** (our server) | Public transit data on the map: live vehicles, stops, stop search, departures, routes and service alerts. The server fetches timetables and vehicle positions from public sources (ZTP, Koleje Małopolskie, OpenStreetMap), so none of your data is passed on to them. | Your IP address and the request parameters: the map area you view, the stop, line or vehicle you open, the stop name you type and the filters you pick. No account data, installation ID or tickets. The server keeps no access logs and ties nothing to a user: IP addresses and requests are not stored anywhere. |
+| **Cloudflare** | Protects and delivers traffic to relay.mobilekkm.app and gtfs.mobilekkm.app | IP address and technical connection data, processed under [Cloudflare's policy](https://www.cloudflare.com/privacypolicy/). |
 | **tPay** (`secure.tpay.com`) | Paying for tickets, in a browser tab | The payment details you give tPay. The app does not see them. [tPay's policy](https://tpay.com/polityka-prywatnosci). |
 | **OpenFreeMap** (`tiles.openfreemap.org`) | Map | IP address and the map area you view. Not your location. |
 | **External websites** (e.g. ekp.mpk.krakow.pl, GitHub) | Links opened in the browser | What any visited website receives. |
@@ -47,7 +48,7 @@ Signing out removes the session and ticket copies. Uninstalling the app or clear
 
 ## Permissions
 
-- **Location**: only on the map, after you tap the location button, to show where you are. Your location is never sent anywhere.
+- **Location**: only on the map, after you tap the location button, to show where you are. The coordinates of your location are never sent anywhere; gtfs.mobilekkm.app only receives the map area you view.
 - **Camera and photos**: only when you add a profile photo. The chosen photo is sent to eKP, which requires it.
 - **Internet**: to connect to the services above.
 
