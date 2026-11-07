@@ -1,0 +1,13 @@
+// National mourning after the attack in Kraków (until 11.11).
+// Remove the "mourning" class from <html> in _layouts/default.html to undo.
+html.mourning {
+  filter: grayscale(1);
+}
+
+.mourningBanner {
+  padding: 10px 20px;
+  background: #000;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
