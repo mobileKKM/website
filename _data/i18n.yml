@@ -5,7 +5,6 @@ pl:
   title: "mobileKKM: bilety w telefonie"
   description: Nieoficjalna aplikacja open-source do mobilnych biletów okresowych w Krakowie.
   price: Bezpłatna
-  mourning: Żałoba w Krakowie do 11 listopada. Łączymy się w smutku z ofiarami zamachu i ich bliskimi.
   copyright: mobileKKM nie jest powiązana z ZTP ani MPK S.A. w Krakowie.
   switch_label: English
   switch_short: EN
@@ -49,7 +48,6 @@ en:
   title: "mobileKKM: tickets on your phone"
   description: Unofficial, open-source app for your mobile period tickets in Kraków.
   price: Free
-  mourning: Kraków is in mourning until 11 November. Our thoughts are with the victims of the attack and their loved ones.
   copyright: mobileKKM is not affiliated with ZTP or MPK S.A. in Kraków.
   switch_label: Polski
   switch_short: PL
